@@ -1,23 +1,50 @@
 .card {
-  background: white;
-  color: black;
-  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 240px;
+  width: min(100% - 2rem, 300px);
+  position: relative;
+  transition: transform 0.3s, background-color 0.3s;
+  padding-bottom: 2rem;
+  cursor: pointer;
 
-  img {
+  &:hover {
+    transform: scale(1.03);
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .card__description {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .card__image {
+      filter: brightness(30%);
+    }
+
+    .card__title {
+      opacity: 0.6;
+    }
+  }
+
+  &__image {
     width: 100%;
     border-radius: 8px;
+    transition: filter 0.3s;
   }
 
-  h2 {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
+  &__title {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    transition: opacity 0.3s;
   }
 
-  p {
+  &__description {
     font-size: 0.9rem;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    padding: 4rem 2rem 0;
   }
 }
