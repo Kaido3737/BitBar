@@ -3,19 +3,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #222;
-  border-bottom: 2px solid #0ff;
 }
 
 .logo {
-  font-family: 'Press Start 2P', cursive;
   font-size: 1rem;
-  color: #0ff;
+  color: rgb(255, 255, 255);
 }
 
 .nav a {
   margin-left: 1rem;
-  color: #0ff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 
   &:hover {
