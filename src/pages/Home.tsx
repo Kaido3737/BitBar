@@ -4,7 +4,6 @@ import CocktailCard from '../components/CocktailCard';
 const Home = () => {
   return (
     <main style={{ padding: '2rem' }}>
-      <h1>Our Signature Cocktails</h1>
       <div
         style={{
           display:  'flex',

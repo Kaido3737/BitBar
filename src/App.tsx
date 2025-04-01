@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
-import CocktailDetail from './pages/CocktailDetail.tsx';
+import CocktailDetail from './pages/CocktailDetail';
 
 function App() {
   return (
