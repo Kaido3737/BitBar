@@ -3,11 +3,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-}
-
-.logo {
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
+  &__icon {
+    display: flex;
+    justify-content: space-between;
+    &--img {
+      width: 100px;
+    }
+    &--text {
+      text-align: center;
+      padding-top: 2rem;
+    }
+  }
 }
 
 .nav a {
