@@ -5,13 +5,14 @@
   padding: 1rem 2rem;
   &__icon {
     display: flex;
-    justify-content: space-between;
     &--img {
-      width: 100px;
+      width: min(100% - 2rem, 100px);
+      object-fit: contain;
     }
     &--text {
       text-align: center;
-      padding-top: 2rem;
+      font-size: 2rem;
+      margin-top: 2rem;
     }
   }
 }
