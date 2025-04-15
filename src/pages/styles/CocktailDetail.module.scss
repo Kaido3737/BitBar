@@ -42,13 +42,28 @@
     border-radius: 12px;
   }
   &__summary {
-    display: block;
+    display: flex;
     cursor: pointer;
+    align-items: center;
+    gap: 15px;
+    position: relative;
     padding: 20px;
     font-size: 2rem;
     summary::--webkit-details-marker {
       display: none;
     }
+  }
+  &__arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid white;
+    transition: transform 0.2s ease;
+  }
+  &__details[before-rotate="false"] .cocktail-detail__arrow{
+    transform: rotate(90deg);
   }
   &__content {
     overflow: hidden;

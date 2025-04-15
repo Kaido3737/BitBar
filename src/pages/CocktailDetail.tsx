@@ -22,6 +22,7 @@ const CocktailDetail = () => {
 
         if (isOpen) {
           const height = content.scrollHeight;
+          detail.setAttribute('before-rotate', 'true');
           const animationClose = content.animate(
             [
               { height: `${height}px` },
@@ -41,6 +42,7 @@ const CocktailDetail = () => {
         } else {
           const height = content.scrollHeight;
           detail.setAttribute('open', 'true');
+          detail.setAttribute('before-rotate', 'false');
           const animationOpen = content.animate(
             [
               { height: '0px' },
@@ -98,9 +100,11 @@ const CocktailDetail = () => {
                 if (el) detailRefs.current[index] = el;
               }}
               data-open="false"
+              before-rotate="true"
               className={styles['cocktail-detail__details']}
             >
               <summary className={styles['cocktail-detail__summary']}>
+                <span className={styles['cocktail-detail__arrow']} />
                 {key === 'description' ? '説明' : key === 'ingredient' ? '材料' : 'レシピ'}
               </summary>
               <div className={styles['cocktail-detail__content']}>
