@@ -12,7 +12,7 @@ const Header = () => {
         <span className={styles['header__icon--text']}>Bit Bar</span>
       </h1>
       <nav className={styles.nav}>
-        <a href="#">Home</a>
+        <a href="" onClick={() => navigate(`/`)}>Home</a>
         <a href="#about">About</a>
       </nav>
     </div>
