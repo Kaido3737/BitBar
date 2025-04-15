@@ -8,8 +8,8 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cocktail/:id" element={<CocktailDetail />} />
+        <Route path="/BitBar/" element={<Home />} />
+        <Route path="/BitBar/cocktail/:id" element={<CocktailDetail />} />
       </Routes>
     </>
   );
