@@ -9,7 +9,7 @@ const CocktailCard = ({cocktail}: {cocktail: Cocktail}) => {
   return (
     <div
       className={styles['card']}
-      onClick={() => navigate(`/cocktail/${cocktail.id}`)}
+      onClick={() => navigate(`/BitBar/cocktail/${cocktail.id}`)}
     >
       <img src={cocktail.image} alt={cocktail.name} className={styles['card__image']}/>
       <h2 className={styles['card__title']}>{cocktail.name}</h2>
