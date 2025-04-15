@@ -8,7 +8,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/BitBar/" element={<Home />} />
+        <Route path="/BitBar" element={<Home />} />
         <Route path="/BitBar/cocktail/:id" element={<CocktailDetail />} />
       </Routes>
     </>
