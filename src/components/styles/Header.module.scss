@@ -5,6 +5,7 @@
   padding: 1rem 2rem;
   &__icon {
     display: flex;
+    cursor: pointer;
     &--img {
       width: min(100% - 2rem, 100px);
       object-fit: contain;
