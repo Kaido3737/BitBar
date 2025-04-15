@@ -1,0 +1,61 @@
+.cocktail-detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  &__container {
+    align-items: center;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    padding: 30px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        &:first-child {
+          border-top: 2px solid rgba(255, 255, 255, 0.5);
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      th, td {
+        padding: 0.8rem 1rem;
+        text-align: left;
+      }
+    }
+  }
+  &__name {
+    font-size: 3rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  &__image {
+    width: 400px;
+  }
+  &__details {
+    margin-top: 20px;
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+  }
+  &__summary {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 2rem;
+    summary::--webkit-details-marker {
+      display: none;
+    }
+  }
+  &__content {
+    overflow: hidden;
+    font-size: 1rem;
+    padding-left: 30px;
+    &--inner {
+      padding: 0 20px 20px;
+    }
+  }
+}
